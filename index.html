@@ -21,7 +21,8 @@
             <div id="xp-progress" class="xp-progress"></div>
         </div>
         <p id="xp-text">120 / 500 XP</p>
-        <p id="coins">💰 100Coins</p>
+        <p id="coins">💰 100 Coins</p>
+        <p id="streak">🔥 Quest Streak: 0 days</p>
     </div>    
     
     <div class="quest-board">
@@ -33,7 +34,184 @@
             <p>Difficulty: ⭐⭐</p>
 
             <p>Reward: +100 XP &nbsp; +50 Coins</p>
-            <button id="complete-quest">Complete Quest</button>
+            <button class="complete-quest" data-quest="study" data-xp="100" data-coins="50">
+                Complete Quest
+            </button>
+        </div>
+
+        <div class="quest">
+            <h3>💪 Exercise</h3>
+            <p>Difficulty: ⭐⭐⭐ </p>
+            <p>Reward: +150 XP &nbsp; +75coins</p>
+            <button class= "complete-quest" data-quest="exercise" data-xp="150" data-coins="75">
+                Complete Quest
+            </button>
+        </div>
+
+
+        <div class="quest">
+            <h3>💻 Work on a project</h3>
+            <p>Difficulty: ⭐⭐⭐⭐ </p>
+            <p>Reward: +200 XP &nbsp; +100 coins</p>
+            <button class="complete-quest" data-quest="project" data-xp="200" data-coins="100">
+                Complete Quest
+            </button>
+        </div>
+
+        <div class="daily-quest">
+            <h3>📅 Daily Challenge</h3>
+            <p>Complete one extra productive task today.</p>
+            <p>Reward: ⭐ 100 XP + 💰 100 coins</p>
+
+            <button id="daily-quest-button">
+                Complete Daily Quest
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="achievements">
+
+        <h2>🏆 Achievements</h2>
+
+        <div class="achievement">
+            <h3>⚔️ First Quest</h3>
+            <p>Complete your first quest.</p>
+            <span id="first-quest">🔒 Locked</span>
+        </div>
+
+        <div class="achievement">
+            <h3>🌟 Rising Adventurer</h3>
+            <p>Reach level 2.</p>
+            <span id="level-2">🔒 Locked</span>
+        </div>
+
+        <div class="achievement">
+            <h3>💰 Coin Collector</h3>
+            <p>Collect 500 coins.</p>
+            <span id="coin-500">🔒 Locked</span>
+        </div>
+
+        <div class="achievement">
+            <h3>🔥 Streak Master</h3>
+            <p>Reach a 7-day quest streak.</p>
+            <span id="strak-7">🔒 Locked</span>
+        </div>
+
+        <div class="achievement">
+            <h3>⚔️ Quest Veteran</h3>
+            <p>Complete 10 quests.</p>
+            <span id="quests-10">🔒 Locked</span>
+        </div>
+
+        <div class="achievement">
+            <h3>💰 Rich Adventurer</h3>
+            <p>Have a 1,000 coins,</p>
+            <span id="coin-1000">🔒 Locked</span>
+        </div>
+
+        <div class="achievement">
+            <h3>👑 Legendary Hunter</h3>
+            <p>Purchace the Dragon Blade.</p>
+            <span id="dragon-blade-achievement">🔒 Locked</span>
+        </div>
+
+        <div class="achievement">
+            <h3>📈 Level 5 Hero</h3>
+            <p>Reach level 5.</p>
+            <span id="level-5">🔒 Locked</span>
+        </div>
+    </div>
+
+    <div class="stats">
+
+        <h2>📊 Character Stats</h2>
+
+        <div class="stat">
+            <span>⚔️ Strength</span>
+            <span id="strength">1</span>
+        </div>
+
+        <div class="stat">
+            <span>🧠 Intelligence</span>
+            <span id="intelligence">1</span>
+        </div>
+
+        <div class="stat">
+            <span>💪 Vitality</span>
+            <span id="vitality">1</span>
+        </div>
+
+        <div class="stat">
+            <span>💻 Crafting</span>
+            <span id="crafting">1</span>
+        </div>
+
+        <div class="stat">
+            <span>🔥 Streak</span>
+            <span id="strak">1</span>
+        </div>
+
+    </div>
+
+    <div class="shop">
+
+        <h2>🛒 QuestForge Shop</h2>
+
+        <div class="shop-item">
+            <h3>⚔️ Iron Sword</h3>
+            <p class="rarity common">⚪ Common</p>
+            <p>Increase Strength by +2</p>
+            <p>Price: 💰 200 Coins</p>
+            <button class="buy-item" data-item="iron-sword" data-price="200">
+                Buy
+            </button>
+        </div>
+
+
+
+        <div class="shop-item">
+            <h3>🧠 Magic Tome</h3>
+            <p class="rarity rare">🔵 Rare</p>
+            <p>Increase intelligence by +2</p>
+            <p>Price: 💰 250 Coins</p>
+            <button class="buy-item" data-item="magic-tome" data-price="250">
+                Buy
+            </button>
+
+        </div>
+
+        
+        <div class="shop-item">
+            <h3>🛡️ Iron Shield</h3>
+            <p class="rarity epic">🟣 Epic</p>
+            <p>Increase Vitality by +2</p>
+            <p>Price: 💰 300 Coins</p>
+            <button class="buy-item" data-item="iron-shield" data-price="300">
+                Buy
+            </button>
+
+        
+        </div>
+
+        <div class="shop-item">
+            <h3>👑 Dragon Blade</h3>
+            <p class="rarity legendary">🟠 legendary</p>
+            <p>Increase strength by +5</p>
+            <p>price: 💰 750 Coins</p>
+            <button class="buy-item" data-item="dragon-blade" data-price="750">
+                Buy
+            </button>
+
+        </div>
+    </div>
+
+    <div class="inventory">
+        <h2>🎒 Inventory</h2>
+
+        <div id="inventory-list">
+            <p>No items purchased yet.</p>
         </div>
     </div>
 

@@ -102,3 +102,292 @@ p {
      transform: scale(1.05);
 
 }
+
+
+.quest button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+.achievements {
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #24212f;
+    border: 2px solid #5f5875;
+    border-radius: 15px;
+}
+
+
+.achievements h2 {
+    color: #f0b35b;
+    font-size: 30px;
+}
+
+.achievement {
+    background-color: #17151f;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.achievement h3 {
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+.achievement p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.achievement span {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 10px; 
+    border-radius: 6px;
+    background-color: #3a3548;
+    color: #c9c5d3
+}
+
+
+.stats {
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #24212f;
+    border: 2px solid #5f5875;
+    border-radius: 15px;
+}
+
+
+.stat h2 {
+    color: #f0b35b;
+    font-size: 30px;
+}
+
+.stat {
+    background-color: #17151f;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.stat h3 {
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+.stat p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.stat span {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 10px; 
+    border-radius: 6px;
+    background-color: #3a3548;
+    color: #c9c5d3
+}
+
+.shop {
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #24212f;
+    border: 2px solid #5f5875;
+    border-radius: 15px;
+
+}
+
+
+.shop h2 {
+    color: #f0b35b;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.shop-item {
+    background-color: #17151f;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #3a3548;
+}
+
+.shop-item h3 {
+    color:white;
+    margin-bottom: 8px;
+}
+
+.shop-item p {
+    margin: 6px 0;
+    color: #c9c5d3;
+
+}
+
+.shop-item button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0b35b;
+    color: #17151f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.shop-item button:hover {
+    transform: scale(1.05);
+}
+
+.shop-item button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none; 
+}
+
+
+.inventory {
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #24212f;
+    border: 2px solid #5f5875;
+    border-radius: 15px;
+}
+
+
+.inventory h2 {
+    color: #f0b35b;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.inventory-item {
+    background-color: #17151f;
+    margin-top:15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #3a3549;
+    color: white;
+    font-size: 17px;
+}
+
+.rarity {
+    font-weight: bold;
+    margin: 5px 0;
+
+
+}
+
+.rarity.common {
+    color: #c9c5d3;
+}
+
+.rarity.rare {
+    color: #4da6ff;
+}
+
+.rarity.epic {
+    color: #b56cff;
+}
+
+.rarity.legendary {
+    color: #ff8a3d;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff8a3d;
+}
+
+.shop-item:has(.legendary) {
+    border: 2px solid #ff8a3d;
+    box-shadow: 0 0 12px rgba(255, 138, 61, 0.35);
+}
+
+
+.inventory-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.inventory-rarity {
+    font-weight: bold;
+}
+
+.inventory-rarity.common {
+    color: #c9c5d3;
+}
+
+.inventory-rarity.rare {
+    color: #4da6ff;
+}
+
+.inventory-rarity.epic {
+    color: #b56cff;
+}
+
+.inventory-rarity.legendary {
+    color: #ff8a3d;
+    text-shadow: 0 0 8px #ff8a3d;
+}
+
+
+.daily-quest {
+    width: auto;
+    margin: 15px 0 0 0;
+    padding: 20px;
+    background-color: #17151f;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: none;
+}
+
+.daily-quest h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.daily-quest p {
+    color: #c9c5d3;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.daily-quest button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0b35b;
+    color: #17151f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.daily-quest button:hover {
+    transform: scale(1.05);
+}
+
+.daily-quest button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
